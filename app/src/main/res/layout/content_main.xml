@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vilma.percentagecalculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="50sp"
+        android:id="@+id/totalTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:text="What is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="30sp"
+        android:layout_marginTop="21dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/totalTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/percentageTxt"
+        android:layout_alignBottom="@+id/percentageTxt"
+        android:layout_alignRight="@+id/percentageTxt"
+        android:layout_alignEnd="@+id/percentageTxt"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numberTxt"
+        android:hint="Enter Number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/percentageTxt"
+        android:layout_alignStart="@+id/percentageTxt"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="of"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/percentageTxt"
+        android:hint="Enter Percentage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcBtn"
+        android:elevation="0dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:textColor="?attr/actionMenuTextColor"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/numberTxt"
+        android:layout_alignLeft="@+id/numberTxt"
+        android:layout_alignStart="@+id/numberTxt"
+        android:layout_alignRight="@+id/numberTxt"
+        android:layout_alignEnd="@+id/numberTxt" />
+
+</RelativeLayout>
